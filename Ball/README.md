@@ -1,5 +1,4 @@
-Ball
-=======
+# Ball
 
 This program creates a ball that moves without the need for a controller. By tapping on the form wall, the direction changes. (Like Zero Player games) It's written with the Pygame library, and I'm not good at it. *I wrote it for the love of the mothers of the world and their kindness*
 
@@ -7,6 +6,7 @@ This program creates a ball that moves without the need for a controller. By tap
 
 using python version
 ====================
+The Python version is simpler and more understandable. I suggest you read this code first. Follow the steps below to run.
 
 step1
 -----
