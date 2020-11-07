@@ -5,6 +5,9 @@ This program creates a ball that moves without the need for a controller. By tap
 
 ![screenshot](img/ball_python_version.png)
 
+using python version
+====================
+
 step1
 -----
 
@@ -15,8 +18,8 @@ pip install pygame
 ```
 
 step2
-
 -----
+
 run the code
 
 ```
@@ -25,7 +28,7 @@ python Ball.py
 
 
 using c version
----------------
+===============
 
 ![screenshot](img/ball_c_version.png)
 c version needs compiling. if you using Unix os, you can compile like this:
