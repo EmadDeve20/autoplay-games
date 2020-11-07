@@ -31,6 +31,7 @@ using c version
 ===============
 
 ![screenshot](img/ball_c_version.png)
+
 c version needs compiling. if you using Unix os, you can compile like this:
 
 ```
