@@ -67,21 +67,13 @@ class player:
         dema.playing(self.numbers)
 
     def random_number(self):
-        have_zero = False
-        for i in range(4):
-            for j in range(4):
-                if self.numbers[i][j] == 0:
-                    have_zero = True
+            """this functio can be crated number in the matrix fo game""" 
+            while True:
+                x = random.randint(0,3)
+                y = random.randint(0,3)
+                if self.numbers[x][y] == 0:
+                    self.numbers[x][y] = 2
                     break
-            if have_zero:
-                break
-
-        while have_zero:
-            x = random.randint(0,3)
-            y = random.randint(0,3)
-            if self.numbers[x][y] == 0:
-                self.numbers[x][y] = 2
-                break
 
 
 if __name__ == '__main__' :
