@@ -214,11 +214,10 @@ def pushing_down(mat):
 
 def matrix_is_alive(mat):
     """This function can check whether the matrix is alive or not"""
-    import push_numbers as p
 
-    if p.can_pushing_down(mat) or p.can_pushing_up(mat)\
-        or p.can_pushing_left(mat) or p.can_pushing_right(mat):
+    if can_pushing_down(mat) or can_pushing_up(mat)\
+        or can_pushing_left(mat) or can_pushing_right(mat):
         return True
-    
+
     else:
-        return False 
+        return False
