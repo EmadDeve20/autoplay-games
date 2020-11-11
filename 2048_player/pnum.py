@@ -45,3 +45,8 @@ def prnum(number):
         #printing a number with red font color
         print('\033[31m'+str(number))
 
+def plist(numbers):
+    """this function can be printing the numbers with private colors"""
+    for i in range(numbers):
+        prnum(numbers[i])
+
