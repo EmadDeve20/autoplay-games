@@ -1,5 +1,9 @@
 #!/bin/env python3
 
+def reset():
+    """clear font color"""
+    print("\033[0m")
+
 def prnum(number):
     """this is function can be printing your number with private color"""
     try:
@@ -46,12 +50,12 @@ def prnum(number):
         print('\033[31m'+str(number) , end = "\t")
 
 def plist(numbers):
-    """this function can be printing the numbers with private colors"""
-    for i in range(numbers):
+    """this function can be priting a numbers with private colors"""
+    for i in range(len(numbers)):
         prnum(numbers[i])
 
 def prmat(mat):
     """this is function can be priting matrix"""
     for i in range(len(mat)):
         plist(mat[i])
-        print("\n")
+        print("\n");reset()
