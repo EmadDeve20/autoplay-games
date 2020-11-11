@@ -50,3 +50,8 @@ def plist(numbers):
     for i in range(numbers):
         prnum(numbers[i])
 
+def prmat(mat):
+    """this is function can be priting matrix"""
+    for i in range(len(mat)):
+        plist(mat[i])
+        print("\n")
