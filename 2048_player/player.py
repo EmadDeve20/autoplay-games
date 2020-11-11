@@ -6,6 +6,7 @@ i need time for creating better this code or you are can help me with creating b
 we have a fun life :D
 """
 
+from pnum import prmat
 import sys , random , time , dema
 import push_numbers as p
 
@@ -28,16 +29,7 @@ class player:
         self.draw()
     def draw(self):
         """draw play-ground"""
-        #first, i need a clear screen for the playground
-        #print("\033[0H")
-        space = '    '
-        for i in range(4):
-            for j in range(4):
-                if self.numbers[i][j] == 0:
-                    sys.stdout.write(space + ".")
-                else:
-                    sys.stdout.write(space +str(self.numbers[i][j]))
-            sys.stdout.write("\n")
+        prmat(self.numbers)
         print(f"Score: {self.score()}")
 
     def game_manager(self):
