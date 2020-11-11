@@ -7,7 +7,7 @@ we have a fun life :D
 """
 
 from pnum import prmat
-import sys , random , time , dema
+import random , time , dema
 import push_numbers as p
 
 class player:
