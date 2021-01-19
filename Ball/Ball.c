@@ -46,7 +46,7 @@ void ball_movment(int *ptrmodel , int *ptrx , int *ptry){
 					*ptrx = *ptrx+1;
 					*ptry = *ptry+1;
 					draw(ptrx , ptry);
-					printf("x = %d , y = %d , time=%d\n" , *ptrx , *ptry , TIME );
+					//printf("x = %d , y = %d , time=%d\n" , *ptrx , *ptry , TIME );
 				}
 			}
 			if(*ptry == 0){
