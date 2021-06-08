@@ -80,6 +80,7 @@ class Room:
             if self.width_ball == 0:
                 self.width_ball_changer = 1
 
+            #TODO: fix this hard code
             # Now the ball has hit the top wall
             if self.y_location-55 < 0 and self.y_changer == -1:
                 # the ball need moving down
