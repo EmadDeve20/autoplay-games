@@ -21,13 +21,13 @@ class Room:
         self.x_location = random.randrange(50, 200)
         self.y_location = random.randrange(50, 200)
         # first, run the ball moving up or down? this is random (up or down)
-        self.y_changer = self.up_or_down()
+        self.y_changer = self.__up_or_down()
         # first run , ball moving left or right? this is random (left or right)
-        self.x_changer = self.left_or_right()
+        self.x_changer = self.__left_or_right()
         # This ball can be faster or slower.
         # But this is a coincidence and remains the same until the end.
         # That is, it either gets faster or slower!
-        self.speed_changer = self.faster_or_slower()
+        self.speed_changer = self.__faster_or_slower()
         self.width_ball = 0
         self.width_ball_changer = 1
 
@@ -36,19 +36,19 @@ class Room:
         bull = pygame.draw.circle(self.form, color, (x_location, y_location), 50, width)
         self.form.blit(self.form, bull)
 
-    def up_or_down(self):
+    def __up_or_down(self):
         """return up(-1) or down(1)"""
         if random.randrange(2) == 1:
             return 1
         return -1
 
-    def left_or_right(self):
+    def __left_or_right(self):
         """return left(-1) or right(1)"""
         if random.randrange(2) == 1:
             return 1
         return -1
 
-    def faster_or_slower(self):
+    def __faster_or_slower(self):
         """return faster(1) or lower(-1)"""
         if random.randrange(2) == 1:
             return 1
@@ -80,7 +80,7 @@ class Room:
             if self.width_ball == 0:
                 self.width_ball_changer = 1
 
-            #TODO: fix this hard code
+            # i Got this numbers with Test!
             # Now the ball has hit the top wall
             if self.y_location-55 < 0 and self.y_changer == -1:
                 # the ball need moving down
