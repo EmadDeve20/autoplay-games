@@ -6,11 +6,13 @@ i need time for creating better this code or you are can help me with creating b
 we have a fun life :D
 """
 
+import random
+#import time
 from pnum import prmat
-import random , time , dema
+import Player
 import push_numbers as p
 
-class player:
+class Game_2048:
     """this is class can solve 2048 game"""
     def __init__(self):
         """crated numbers for player"""
@@ -35,9 +37,9 @@ class player:
     def game_manager(self):
         """this function for managing game"""
         while p.matrix_is_alive(self.numbers):
-           self.playing_game()
-           self.random_number()
-           self.draw()
+            self.playing_game()
+            self.random_number()
+            self.draw()
 
 
     def score(self):
@@ -54,20 +56,20 @@ class player:
     def playing_game(self):
         """i can be playing 2048 game :D"""
         #player: i need time to think :D
-        #time.sleep(1)
         #Player: h3h this is Esay :^)
-        dema.playing(self.numbers)
+        Player.playing(self.numbers)
+        #time.sleep(.5)
 
     def random_number(self):
-            """this functio can be crated number in the matrix fo game""" 
-            while True:
-                x = random.randint(0,3)
-                y = random.randint(0,3)
-                if self.numbers[x][y] == 0:
-                    self.numbers[x][y] = 2
-                    break
+        """this functio can be crated number in the matrix fo game"""
+        while True:
+            x_location = random.randint(0,3)
+            y_location = random.randint(0,3)
+            if self.numbers[x_location][y_location] == 0:
+                self.numbers[x_location][y_location] = 2
+                break
 
 
 if __name__ == '__main__' :
-    player = player()
-    player.game_manager()
+    GAME = Game_2048()
+    GAME.game_manager()
